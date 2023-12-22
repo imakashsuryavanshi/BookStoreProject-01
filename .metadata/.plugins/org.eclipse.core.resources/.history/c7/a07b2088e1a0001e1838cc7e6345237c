@@ -1,0 +1,44 @@
+package com.bookstore.dao;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import org.junit.BeforeClass;
+import org.junit.jupiter.api.Test;
+
+import com.bookstore.entity.Users;
+
+class UserDAOTest {
+	
+	private static EntityManagerFactory entityManagerFactory;
+	private static EntityManager entityManager;
+	private static UserDAO userDAO;
+	
+	@BeforeClass
+	public static void setUpClass(){
+		entityManagerFactory = Persistence.createEntityManagerFactory("BookStoreWebsite");
+		entityManager = entityManagerFactory.createEntityManager();
+		
+		userDAO = new UserDAO(entityManager);
+	}
+
+	@Test
+	void testCreateUsers() {
+		Users user1 = new Users();
+		user1.setEmail("abd@gmail.com");
+		user1.setFullName("Mr. AB devillers");
+		user1.setPassword("Mr.360");
+		
+		
+		user1 = userDAO.create(user1);
+		
+		entityManager.close();
+		entityManagerFactory.close();	
+		
+		assert(user1.getUserId() > 0);
+	}
+
+}

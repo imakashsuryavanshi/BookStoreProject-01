@@ -1,0 +1,17 @@
+package com.bookstore.dao;
+
+import javax.persistence.EntityManagerFactory;
+
+public class JpaDAO<T> {
+
+	protected EntityManagerFactory entityManager;
+
+	public JpaDAO(EntityManagerFactory entityManager) {
+		super();
+		this.entityManager = entityManager;
+	}
+	
+	public T create(T t) {
+		
+	}
+}
