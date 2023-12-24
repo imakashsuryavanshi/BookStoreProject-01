@@ -17,4 +17,5 @@
     <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="javax.persistence.PersistenceException"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Users"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>
