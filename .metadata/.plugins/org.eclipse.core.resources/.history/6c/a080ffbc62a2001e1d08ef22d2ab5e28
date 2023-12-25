@@ -1,0 +1,8 @@
+<div align="center">
+	<div>
+		<img alt="BookStoreAdminLogo" src="../images/BookStoreAdminLogo.png" height="100">
+	</div>
+	<div>
+		Welcome, Admin | &nspb; <a href="Logout">Logout</a>
+	</div>
+</div>
