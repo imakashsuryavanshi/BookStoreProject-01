@@ -20,7 +20,9 @@
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.UserDAO"/>
-    <fullyQualifiedTypeName name="com.bookstore.service.UserServices"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Users"/>
+    <fullyQualifiedTypeName name="com.bookstore.service.UserServices"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 </qualifiedTypeNameHistroy>
