@@ -27,7 +27,7 @@ public class ListUsersServlet extends HttpServlet {
 			throws ServletException, IOException {
 		UserServices userServices = new UserServices(request,response);
 		
-		userServices.listUsers();
+		userServices.listUser();
 	}
 
 

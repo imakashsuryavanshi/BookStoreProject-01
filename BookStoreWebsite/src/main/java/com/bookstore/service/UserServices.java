@@ -29,11 +29,11 @@ public class UserServices {
 		userDAO = new UserDAO(entityManager);
 	}
 
-	public void listUsers() throws ServletException, IOException {
-		listUsers(null);
+	public void listUser() throws ServletException, IOException {
+		listUser(null);
 	}
 
-	public void listUsers(String message) throws ServletException, IOException {
+	public void listUser(String message) throws ServletException, IOException {
 		List<Users> listUsers = userDAO.listAll();
 
 		request.setAttribute("listUsers", listUsers);
@@ -63,7 +63,42 @@ public class UserServices {
 		}else {		
 			Users newUser = new Users(email, fullName, password);
 			userDAO.create(newUser);
-			listUsers("New User Created Successfully");
+			listUser("New User Created Successfully");
+		}
+	}
+
+	public void EditUser() throws ServletException, IOException {
+		int userId = Integer.parseInt(request.getParameter("id"));
+		Users user = userDAO.get(userId);
+
+		String editPage = "user_form.jsp";
+		
+		request.setAttribute("user", user);
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher(editPage );
+		requestDispatcher.forward(request, response);
+	}
+
+	public void updateUser() throws ServletException, IOException {
+		int userId = Integer.parseInt(request.getParameter("userId"));
+		String email = request.getParameter("email");
+		String fullName = request.getParameter("fullname");
+		String password = request.getParameter("password");
+		
+		Users userById = userDAO.get(userId);
+		Users userByEmail = userDAO.findByEmail(email);
+		
+		if(userByEmail != null && userByEmail.getUserId() != userById.getUserId()) {
+			String message = "Could not update user. User with email "+email+" already exists.";
+			request.setAttribute("message", message);
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("message.jsp" );
+			requestDispatcher.forward(request, response);
+			
+		}else {
+			Users user = new Users(userId, email, fullName,password);
+			userDAO.update(user);
+			
+			String message = "User has been updated successfully.";
+			listUser(message);
 		}
 	}
 }

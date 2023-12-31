@@ -1,9 +1,0 @@
-<div align="center">
-	<div>
-		<img alt="BookStoreLogo" src="images/BookstoreLogo.png"/>
-	</div>
-	<div>
-		<input type="text" size="50" name="keyword"/>
-		<input type="button" value="Search"/>		
-	</div>
-</div>
