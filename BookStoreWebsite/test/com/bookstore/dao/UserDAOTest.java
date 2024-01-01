@@ -83,7 +83,7 @@ public class UserDAOTest {
 	@Test
 	public void testDeleteUser() {
 		Integer userId = 8;
-		userDAO.delet(userId);
+		userDAO.delete(userId);
 		
 		Users user = userDAO.get(userId);
 		assertNull(user);
@@ -92,7 +92,7 @@ public class UserDAOTest {
 	@Test(expected = Exception.class)
 	public void testDeleteNonExistUsers() {
 		Integer userId = 8;
-		userDAO.delet(userId);
+		userDAO.delete(userId);
 	}
 	
 	@Test

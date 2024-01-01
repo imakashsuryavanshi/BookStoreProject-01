@@ -41,7 +41,7 @@ public class UserDAO extends JpaDAO<Users> implements GenericDAO<Users> {
 	}
 
 	@Override
-	public void delet(Object UserId) {
+	public void delete(Object UserId) {
 		super.delete(Users.class, UserId);
 	}
 

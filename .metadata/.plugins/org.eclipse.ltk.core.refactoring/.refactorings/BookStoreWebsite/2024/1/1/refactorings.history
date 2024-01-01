@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;com.bookstore.dao.GenericDAO.delet(...)&apos; to &apos;delete&apos;&#x0D;&#x0A;- Original project: &apos;BookStoreWebsite&apos;&#x0D;&#x0A;- Original element: &apos;com.bookstore.dao.GenericDAO.delet(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;com.bookstore.dao.GenericDAO.delete(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;delet&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bookstore.dao{GenericDAO.java[GenericDAO~delet~QObject;" name="delete" references="true" stamp="1704119624328" version="1.0"/>
+</session>
