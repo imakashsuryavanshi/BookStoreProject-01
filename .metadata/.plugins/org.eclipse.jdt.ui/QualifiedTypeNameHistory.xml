@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManagerFactory"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Persistence"/>
-    <fullyQualifiedTypeName name="com.bookstore.entity.Category"/>
     <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
     <fullyQualifiedTypeName name="org.junit.AfterClass"/>
     <fullyQualifiedTypeName name="javax.persistence.PersistenceException"/>
@@ -25,4 +24,7 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="com.bookstore.service.UserServices"/>
+    <fullyQualifiedTypeName name="com.bookstore.dao.CategoryDAO"/>
+    <fullyQualifiedTypeName name="com.bookstore.dao.BaseDAOTest"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.Category"/>
 </qualifiedTypeNameHistroy>
