@@ -27,7 +27,7 @@
     <fullyQualifiedTypeName name="com.bookstore.dao.BaseDAOTest"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.CategoryDAO"/>
     <fullyQualifiedTypeName name="com.bookstore.controller.admin.BaseServlet"/>
-    <fullyQualifiedTypeName name="com.bookstore.service.CategoryServices"/>
-    <fullyQualifiedTypeName name="com.bookstore.entity.Category"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.Category"/>
+    <fullyQualifiedTypeName name="com.bookstore.service.CategoryServices"/>
 </qualifiedTypeNameHistroy>

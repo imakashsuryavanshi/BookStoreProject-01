@@ -16,7 +16,7 @@ public class AdminHomeServlet extends HttpServlet {
        
     public AdminHomeServlet() {
         super();
-        // TODO Auto-generated constructor stub
+       
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 

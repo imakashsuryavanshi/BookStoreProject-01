@@ -14,6 +14,14 @@ public abstract class BaseServlet extends HttpServlet {
 	protected EntityManagerFactory entityManagerFactory;
 	protected EntityManager entityManager;
 	
+	
+
+	public BaseServlet() {
+		super();
+		
+	}
+
+
 	@Override
 	public void init() throws ServletException {
 		entityManagerFactory = Persistence.createEntityManagerFactory("BookStoreWebsite");
@@ -26,7 +34,5 @@ public abstract class BaseServlet extends HttpServlet {
 		entityManager.close();
 		entityManagerFactory.close();
 	}
-	
-	
 	
 }
