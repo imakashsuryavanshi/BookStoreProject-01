@@ -18,16 +18,16 @@
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.UserDAO"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Users"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="com.bookstore.service.UserServices"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.BaseDAOTest"/>
-    <fullyQualifiedTypeName name="com.bookstore.dao.CategoryDAO"/>
-    <fullyQualifiedTypeName name="com.bookstore.controller.admin.BaseServlet"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="com.bookstore.entity.Category"/>
     <fullyQualifiedTypeName name="com.bookstore.service.CategoryServices"/>
+    <fullyQualifiedTypeName name="com.bookstore.controller.admin.BaseServlet"/>
+    <fullyQualifiedTypeName name="com.bookstore.dao.CategoryDAO"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.Category"/>
 </qualifiedTypeNameHistroy>
