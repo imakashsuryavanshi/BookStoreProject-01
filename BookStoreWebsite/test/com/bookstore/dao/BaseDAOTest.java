@@ -14,7 +14,7 @@ public class BaseDAOTest {
 		entityManager = entityManagerFactory.createEntityManager();
 	}
 	
-	public static void tearDownClass() {
+	public static void tearDownAfterClass() throws Exception {
 		entityManager.close();
 		entityManagerFactory.close();
 	}

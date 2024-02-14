@@ -134,7 +134,7 @@ public class UserDAOTest extends BaseDAOTest{
 	}
 	
 	@AfterClass
-	public static void tearDownClass() {
-		BaseDAOTest.tearDownClass();
+	public static void tearDownAfterClass() throws Exception {
+		BaseDAOTest.tearDownAfterClass();
 	}
 }

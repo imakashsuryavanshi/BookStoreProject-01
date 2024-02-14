@@ -26,7 +26,7 @@ public class CategoryDAOTest extends BaseDAOTest {
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		BaseDAOTest.tearDownClass();
+		BaseDAOTest.tearDownAfterClass();
 	}
 
 	@Test
