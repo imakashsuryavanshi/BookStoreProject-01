@@ -1,0 +1,12 @@
+127.0.0.1 - - [20/Feb/2024:21:18:49 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Feb/2024:21:19:08 +0530] "GET /BookStoreWebsite/admin/ HTTP/1.1" 200 1356
+0:0:0:0:0:0:0:1 - - [20/Feb/2024:21:19:08 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [20/Feb/2024:21:19:29 +0530] "POST /BookStoreWebsite/admin/login HTTP/1.1" 200 2107
+0:0:0:0:0:0:0:1 - - [20/Feb/2024:21:19:36 +0530] "GET /BookStoreWebsite/admin/list_books HTTP/1.1" 200 263232
+0:0:0:0:0:0:0:1 - - [20/Feb/2024:21:19:51 +0530] "GET /BookStoreWebsite/admin/delete_book?id=4 HTTP/1.1" 404 429
+127.0.0.1 - - [20/Feb/2024:21:31:05 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Feb/2024:21:31:24 +0530] "GET /BookStoreWebsite/admin/list_books HTTP/1.1" 200 1356
+0:0:0:0:0:0:0:1 - - [20/Feb/2024:21:31:32 +0530] "POST /BookStoreWebsite/admin/login HTTP/1.1" 200 2107
+0:0:0:0:0:0:0:1 - - [20/Feb/2024:21:31:37 +0530] "GET /BookStoreWebsite/admin/list_books HTTP/1.1" 200 263232
+0:0:0:0:0:0:0:1 - - [20/Feb/2024:21:31:46 +0530] "GET /BookStoreWebsite/admin/delete_book?id=2 HTTP/1.1" 200 205178
+0:0:0:0:0:0:0:1 - - [20/Feb/2024:21:31:51 +0530] "GET /BookStoreWebsite/admin/list_books HTTP/1.1" 200 205075
