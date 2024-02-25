@@ -145,7 +145,7 @@ public class BookServices {
 		Book existBook = bookDAO.get(bookId);
 		Book bookByTitle = bookDAO.findByTitle(title);
 		
-		if(!existBook.equals(bookByTitle)) {
+		if(bookByTitle != null && !existBook.equals(bookByTitle)) {
 			String message = "Could not update book because there's another book having same title.";
 			listBooks(message);
 			return;
@@ -165,5 +165,19 @@ public class BookServices {
 		String message = "The book has been deleted successfully.";
 		listBooks(message);
 		
+	}
+	public void listBooksByCategory() throws ServletException, IOException {
+		int categoryId = Integer.parseInt(request.getParameter("id"));
+		List<Book> listBooks = bookDAO.listByCategory(categoryId);
+		Category category = categoryDAO.get(categoryId);
+		List<Category> listCategory = categoryDAO.listAll();
+		
+		request.setAttribute("listCategory", listCategory);
+		request.setAttribute("listBooks", listBooks);
+		request.setAttribute("category", category);
+		
+		String listPage = "frontend/books_list_by_category.jsp";
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher(listPage);
+		requestDispatcher.forward(request, response);
 	}
 }

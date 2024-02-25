@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div align="center">
 	<div>
-		<img alt="BookStoreLogo" src="images/BookStoreLogo.jpeg" height="100"/> <br/><br/>
+		<img alt="BookStoreLogo" src="images/BookStoreLogo.png" height="90" width="60%"/> <br/><br/>
 	</div>
 	<div>
 		<input type="text" size="50" name="keyword"/> &nbsp;
