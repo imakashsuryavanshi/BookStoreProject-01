@@ -4,13 +4,14 @@
 		<img alt="BookStoreLogo" src="images/BookStoreLogo.png" height="90" width="60%"/> <br/><br/>
 	</div>
 	<div>
-		<input type="text" size="50" name="keyword"/> &nbsp;
-		<input type="button" value="Search"/>
-		
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="login">Sign In</a>	|
-		<a href="register">Register</a>	|	
-		<a href="view_cart">Cart</a>				
+		<form action="search" method="get">
+			<input type="text" size="50" name="keyword"/> &nbsp;
+			<input type="submit" value="Search"/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="login">Sign In</a>	|
+			<a href="register">Register</a>	|	
+			<a href="view_cart">Cart</a>
+		</form>				
 	</div>
 	<div>&nbsp;</div>
 	<div>
