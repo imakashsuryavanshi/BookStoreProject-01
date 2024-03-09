@@ -4,10 +4,6 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.PersistenceException;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -15,14 +11,13 @@ import org.junit.Test;
 
 import com.bookstore.entity.Users;
 
-public class UserDAOTest extends BaseDAOTest{
+public class UserDAOTest {
 	
 	private static UserDAO userDAO;
 
 	@BeforeClass
 	public static void setUpClass() throws Exception {
-		BaseDAOTest.setUpBeforeClass();
-		userDAO = new UserDAO(entityManager);
+		userDAO = new UserDAO();
 	}
 
 	@Test
@@ -135,6 +130,6 @@ public class UserDAOTest extends BaseDAOTest{
 	
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		BaseDAOTest.tearDownAfterClass();
+		userDAO.close();
 	}
 }

@@ -3,7 +3,6 @@ package com.bookstore.dao;
 import static org.junit.Assert.*;
 
 import java.io.IOException;
-import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.DateFormat;
@@ -21,19 +20,18 @@ import org.junit.Test;
 import com.bookstore.entity.Book;
 import com.bookstore.entity.Category;
 
-public class BookDAOTest extends BaseDAOTest {
+public class BookDAOTest{
 	
 	private static BookDAO bookDAO;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		BaseDAOTest.setUpBeforeClass();
-		bookDAO = new BookDAO(entityManager);
+		bookDAO = new BookDAO();
 	}
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		BaseDAOTest.tearDownAfterClass();
+		bookDAO.close();
 	}
 
 	@Test

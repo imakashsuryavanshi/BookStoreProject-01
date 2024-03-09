@@ -11,8 +11,6 @@
     <fullyQualifiedTypeName name="org.junit.AfterClass"/>
     <fullyQualifiedTypeName name="javax.persistence.PersistenceException"/>
     <fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.UserDAO"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Users"/>
@@ -26,7 +24,6 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.bookstore.service.UserServices"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.BaseDAOTest"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -44,13 +41,18 @@
     <fullyQualifiedTypeName name="javax.servlet.http.Part"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="com.bookstore.controller.BaseServlet"/>
-    <fullyQualifiedTypeName name="com.bookstore.dao.CategoryDAO"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Book"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Category"/>
     <fullyQualifiedTypeName name="javax.persistence.Query"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.bookstore.controller.frontend.SearchBookServlet"/>
     <fullyQualifiedTypeName name="com.bookstore.service.BookServices"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.BookDAO"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.bookstore.controller.frontend.HomeServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="com.bookstore.dao.CategoryDAO"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 </qualifiedTypeNameHistroy>

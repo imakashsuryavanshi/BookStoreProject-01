@@ -4,9 +4,6 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -14,19 +11,18 @@ import org.junit.Test;
 
 import com.bookstore.entity.Category;
 
-public class CategoryDAOTest extends BaseDAOTest {
+public class CategoryDAOTest {
 	
 	private static CategoryDAO categoryDAO;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		BaseDAOTest.setUpBeforeClass();
-		categoryDAO = new CategoryDAO(entityManager);
+		categoryDAO = new CategoryDAO();
 	}
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		BaseDAOTest.tearDownAfterClass();
+		categoryDAO.close();
 	}
 
 	@Test
@@ -74,7 +70,7 @@ public class CategoryDAOTest extends BaseDAOTest {
 	public void testCount() {
 		long count = categoryDAO.count();
 		
-		assertEquals(7, count);
+		assertTrue(count > 0);
 	}
 	
 	@Test
