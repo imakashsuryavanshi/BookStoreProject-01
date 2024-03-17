@@ -9,6 +9,7 @@
 	<meta charset="ISO-8859-1">
 	<title>Manage Customers - Evergreen Bookstore Administration</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" /><br>
@@ -61,9 +62,9 @@
 	$(document).ready(function(){
 		$(".deleteLink").each(function() {
 			$(this).on("click", function(){
-				bookId = $(this).attr("id");
-				if(confirm('Are you sure you want to delete the book with ID '+bookId+' ?')){
-					window.location = 'delete_book?id='+bookId;
+				customerId = $(this).attr("id");
+				if(confirm('Are you sure you want to delete the customer with ID '+customerId+' ?')){
+					window.location = 'delete_customer?id='+customerId;
 				}
 			});
 		});
