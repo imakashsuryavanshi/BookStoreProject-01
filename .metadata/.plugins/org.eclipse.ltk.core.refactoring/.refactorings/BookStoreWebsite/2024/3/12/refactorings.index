@@ -2,3 +2,11 @@
 1710685883861	Rename local variable 'newCustomer'
 1710686403595	Rename local variable 'existCustomer'
 1710686435298	Rename local variable 'customer'
+1710859276561	Move compilation units
+1710859746009	Copy file
+1710859778677	Rename resource 'customer_form.jsp'
+1710861452100	Rename local variable 'editPage'
+1710861618558	Copy file
+1711198351453	Copy file
+1711201389758	Copy file
+1711201506428	Rename local variable 'loginPage'
