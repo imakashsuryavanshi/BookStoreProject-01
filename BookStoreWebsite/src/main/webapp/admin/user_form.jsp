@@ -56,34 +56,35 @@
 	</div>	
 	
 	<jsp:directive.include file="footer.jsp" />
-</body>
-<script type="text/javascript">
 
-	$(document).ready(function() {
-		$("#userForm").validate({
-			rules: {
-				email: {
-					required: true,
-					email: true
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			$("#userForm").validate({
+				rules: {
+					email: {
+						required: true,
+						email: true
+					},
+					fullname: "required",
+					password: "required",
 				},
-				fullname: "required",
-				password: "required",
-			},
+				
+				messages: {
+					email: {
+						required: "Please enter email",
+						email: "Please enter a valid email address"
+					},
+					fullname: "Please enter full name",
+					password: "Please enter password"
+				}
+			});
 			
-			messages: {
-				email: {
-					required: "Please enter email",
-					email: "Please enter a valid email address"
-				},
-				fullname: "Please enter full name",
-				password: "Please enter password"
-			}
+			$("#buttonCancel").click(function() {
+				history.go(-1);
+			});
 		});
 		
-		$("#buttonCancel").click(function() {
-			history.go(-1);
-		});
-	});
-	
-</script>
+	</script>
+</body>
 </html>

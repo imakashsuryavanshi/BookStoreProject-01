@@ -39,31 +39,31 @@
 			</table>
 		</form>
 	</div>
-<script type="text/javascript">
-
-	$(document).ready(function() {
-		$("#loginForm").validate({
-			rules: {
-				email: {
-					required: true,
-					email: true
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			$("#loginForm").validate({
+				rules: {
+					email: {
+						required: true,
+						email: true
+					},
+					
+					password: "required",
 				},
 				
-				password: "required",
-			},
+				messages: {
+					email: {
+						required: "Please enter email",
+						email: "Please enter a valid email address"
+					},
+					
+					password: "Please enter password"
+				}
+			});
 			
-			messages: {
-				email: {
-					required: "Please enter email",
-					email: "Please enter a valid email address"
-				},
-				
-				password: "Please enter password"
-			}
 		});
 		
-	});
-	
-</script>
+	</script>
 </body>
 </html>

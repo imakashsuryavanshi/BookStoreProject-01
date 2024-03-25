@@ -104,7 +104,7 @@
 	</div>	
 	
 	<jsp:directive.include file="footer.jsp" />
-</body>
+
 <script type="text/javascript">
 
 	$(document).ready(function() {
@@ -159,4 +159,5 @@
 		reader.readAsDataURL(file);
 	}
 </script>
+</body>
 </html>

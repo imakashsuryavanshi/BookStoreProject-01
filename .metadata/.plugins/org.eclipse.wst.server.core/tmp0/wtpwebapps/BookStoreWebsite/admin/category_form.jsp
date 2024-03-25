@@ -55,24 +55,25 @@
 	</div>	
 	
 	<jsp:directive.include file="footer.jsp" />
-</body>
-<script type="text/javascript">
-	
-	$(document).ready(function() {
-		$("#categoryForm").validate({
-			rules: {
-				name: "required"
-			},
-			
-			messages: {
-				name: "Please enter category name"
-			}
-		});
-		
-		$("#buttonCancel").click(function() {
-			history.go(-1);
-		});
-	});
 
-</script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("#categoryForm").validate({
+				rules: {
+					name: "required"
+				},
+				
+				messages: {
+					name: "Please enter category name"
+				}
+			});
+			
+			$("#buttonCancel").click(function() {
+				history.go(-1);
+			});
+		});
+	
+	</script>
+</body>
 </html>

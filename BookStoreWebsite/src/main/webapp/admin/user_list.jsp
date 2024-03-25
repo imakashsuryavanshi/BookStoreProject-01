@@ -51,16 +51,16 @@
 	
 	<script>
 	
-	$(document).ready(function(){
-		$(".deleteLink").each(function() {
-			$(this).on("click", function(){
-				userId = $(this).attr("id");
-				if(confirm('Are you sure you want to delete the user with ID '+userId+' ?')){
-					window.location = 'delete_user?id='+userId;
-				}
+		$(document).ready(function(){
+			$(".deleteLink").each(function() {
+				$(this).on("click", function(){
+					userId = $(this).attr("id");
+					if(confirm('Are you sure you want to delete the user with ID '+userId+' ?')){
+						window.location = 'delete_user?id='+userId;
+					}
+				});
 			});
 		});
-	});
 		
 	</script>
 </body>

@@ -84,54 +84,55 @@
 	</div>	
 	
 	<jsp:directive.include file="footer.jsp" />
-</body>
-<script type="text/javascript">
 
-	$(document).ready(function() {
-		$("#customerForm").validate({
-			rules: {
-				email{
-					required: true,
-					email:true
-				},
-				fullName: "required",
-				password: "required",
-				confirmPassword{
-					required: true,
-					equalTo: "#password"
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			$("#customerForm").validate({
+				rules: {
+					email{
+						required: true,
+						email:true
+					},
+					fullName: "required",
+					password: "required",
+					confirmPassword{
+						required: true,
+						equalTo: "#password"
+					},
+					
+					phone: "required",
+					address: "required",
+					city: "required",
+					zipCode: "required",
+					country: "required"
 				},
 				
-				phone: "required",
-				address: "required",
-				city: "required",
-				zipCode: "required",
-				country: "required"
-			},
+				messages: {
+					email: {
+						required: "Please enter e-mail address",
+						email: "Please enter a valid e-mail address"
+					},
+					fullName: "Please enter full name",
+					password: "Please enter password",
+					confirmPassword{
+						required: "Please confirm password",
+						equalTo:"Confirm password does not match password"
+					},
+					phone: "Please enter phone number",
+					address: "Please enter address",
+					city: "Please enter city",
+					zipCode: "Please enter zip code",
+					country: "Please enter country"
+				}
+			});
 			
-			messages: {
-				email: {
-					required: "Please enter e-mail address",
-					email: "Please enter a valid e-mail address"
-				},
-				fullName: "Please enter full name",
-				password: "Please enter password",
-				confirmPassword{
-					required: "Please confirm password",
-					equalTo:"Confirm password does not match password"
-				},
-				phone: "Please enter phone number",
-				address: "Please enter address",
-				city: "Please enter city",
-				zipCode: "Please enter zip code",
-				country: "Please enter country"
-			}
+			$("#buttonCancel").click(function() {
+				history.go(-1);
+			});
 		});
 		
-		$("#buttonCancel").click(function() {
-			history.go(-1);
-		});
-	});
-	
-	}
-</script>
+		}
+	</script>
+</body>
 </html>
