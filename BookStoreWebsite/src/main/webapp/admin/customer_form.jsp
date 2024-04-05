@@ -90,13 +90,13 @@
 		$(document).ready(function() {
 			$("#customerForm").validate({
 				rules: {
-					email{
+					email: {
 						required: true,
 						email:true
 					},
 					fullName: "required",
 					password: "required",
-					confirmPassword{
+					confirmPassword: {
 						required: true,
 						equalTo: "#password"
 					},
@@ -115,7 +115,7 @@
 					},
 					fullName: "Please enter full name",
 					password: "Please enter password",
-					confirmPassword{
+					confirmPassword: {
 						required: "Please confirm password",
 						equalTo:"Confirm password does not match password"
 					},
@@ -132,7 +132,7 @@
 			});
 		});
 		
-		}
+		
 	</script>
 </body>
 </html>

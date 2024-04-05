@@ -1,0 +1,63 @@
+package com.bookstore.dao;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.bookstore.entity.Book;
+import com.bookstore.entity.Customer;
+import com.bookstore.entity.Review;
+
+public class ReviewDAOTest {
+
+	private static ReviewDAO reviewDao;
+	
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		reviewDao = new ReviewDAO();
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+		reviewDao.close();
+	}
+	
+	@Test
+	public void testCreateReview() {
+		Review review = new Review();
+		Book book = new Book();
+		Customer customer = new Customer();
+		
+		review.setBook(book);
+	}
+
+	@Test
+	public void testUpdateReview() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGet() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDeleteObject() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testListAll() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testCount() {
+		fail("Not yet implemented");
+	}
+
+}

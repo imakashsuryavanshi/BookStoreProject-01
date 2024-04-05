@@ -83,12 +83,12 @@
 		$(document).ready(function() {
 			$("#customerForm").validate({
 				rules: {
-					email{
+					email: {
 						required: true,
 						email:true
 					},
 					fullName: "required",
-					confirmPassword{
+					confirmPassword: {
 						equalTo: "#password"
 					},
 					
@@ -105,7 +105,7 @@
 						email: "Please enter a valid e-mail address"
 					},
 					fullName: "Please enter full name",
-					confirmPassword{
+					confirmPassword: {
 						equalTo:"Confirm password does not match password"
 					},
 					phone: "Please enter phone number",

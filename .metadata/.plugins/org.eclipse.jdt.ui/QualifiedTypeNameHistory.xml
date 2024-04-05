@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
@@ -35,7 +33,6 @@
     <fullyQualifiedTypeName name="javax.servlet.http.Part"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="com.bookstore.controller.BaseServlet"/>
-    <fullyQualifiedTypeName name="com.bookstore.entity.Book"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Category"/>
     <fullyQualifiedTypeName name="javax.persistence.Query"/>
     <fullyQualifiedTypeName name="com.bookstore.controller.frontend.SearchBookServlet"/>
@@ -47,10 +44,8 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.CategoryDAO"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.BookDAO"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.CustomerDAO"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
@@ -58,5 +53,11 @@
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="com.bookstore.controller.frontend.CustomerLoginFilter"/>
     <fullyQualifiedTypeName name="com.bookstore.service.CustomerServices"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.Book"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Customer"/>
+    <fullyQualifiedTypeName name="com.bookstore.dao.ReviewDAO"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.Review"/>
+    <fullyQualifiedTypeName name="com.bookstore.service.ReviewServices"/>
 </qualifiedTypeNameHistroy>
