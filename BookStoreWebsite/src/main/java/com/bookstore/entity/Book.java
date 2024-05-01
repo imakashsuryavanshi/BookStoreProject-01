@@ -186,25 +186,25 @@ public class Book implements java.io.Serializable {
 		this.lastUpdateTime = lastUpdateTime;
 	}
 
-//	@OneToMany(fetch = FetchType.EAGER, mappedBy = "book")
-//	public Set<Review> getReviews() {
-//		TreeSet<Review> sortedReviews = new TreeSet<>(new Comparator<Review>() {
-//
-//			@Override
-//			public int compare(Review review1, Review review2) {
-//				return review2.getReviewTime().compareTo(review1.getReviewTime());
-//			}
-//
-//		});
-//
-//		sortedReviews.addAll(reviews);
-//		return sortedReviews;
-//	}
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "book")
+	public Set<Review> getReviews() {
+		TreeSet<Review> sortedReviews = new TreeSet<>(new Comparator<Review>() {
 
-//	public void setReviews(Set<Review> reviews) {
-//		this.reviews = reviews;
-//	}
-//
+			@Override
+			public int compare(Review review1, Review review2) {
+				return review2.getReviewTime().compareTo(review1.getReviewTime());
+			}
+
+		});
+
+		sortedReviews.addAll(reviews);
+		return sortedReviews;
+	}
+
+	public void setReviews(Set<Review> reviews) {
+		this.reviews = reviews;
+	}
+
 //	@OneToMany(fetch = FetchType.LAZY, mappedBy = "book")
 //	public Set<OrderDetail> getOrderDetails() {
 //		return this.orderDetails;
@@ -225,54 +225,54 @@ public class Book implements java.io.Serializable {
 		this.base64Image = base64Image;
 	}
 
-//	@Transient
-//	public float getAverageRating() {
-//		float averageRating = 0.0f;
-//		float sum = 0.0f;
-//
-//		if (reviews.isEmpty()) {
-//			return 0.0f;
-//		}
-//
-//		for (Review review : reviews) {
-//			sum += review.getRating();
-//		}
-//
-//		averageRating = sum / reviews.size();
-//
-//		return averageRating;
-//	}
-//
-//	@Transient
-//	public String getRatingStars() {
-//		float averageRating = getAverageRating();
-//
-//		return getRatingString(averageRating);
-//	}
-//
-//	@Transient
-//	public String getRatingString(float averageRating) {
-//		String result = "";
-//
-//		int numberOfStarsOn = (int) averageRating;
-//
-//		for (int i = 1; i <= numberOfStarsOn; i++) {
-//			result += "on,";
-//		}
-//
-//		int next = numberOfStarsOn + 1;
-//
-//		if (averageRating > numberOfStarsOn) {
-//			result += "half,";
-//			next++;
-//		}
-//
-//		for (int j = next; j <= 5; j++) {
-//			result += "off,";
-//		}
-//
-//		return result.substring(0, result.length() - 1);
-//	}
+	@Transient
+	public float getAverageRating() {
+		float averageRating = 0.0f;
+		float sum = 0.0f;
+
+		if (reviews.isEmpty()) {
+			return 0.0f;
+		}
+
+		for (Review review : reviews) {
+			sum += review.getRating();
+		}
+
+		averageRating = sum / reviews.size();
+
+		return averageRating;
+	}
+
+	@Transient
+	public String getRatingStars() {
+		float averageRating = getAverageRating();
+
+		return getRatingString(averageRating);
+	}
+
+	@Transient
+	public String getRatingString(float averageRating) {
+		String result = "";
+
+		int numberOfStarsOn = (int) averageRating;
+
+		for (int i = 1; i <= numberOfStarsOn; i++) {
+			result += "on,";
+		}
+
+		int next = numberOfStarsOn + 1;
+
+		if (averageRating > numberOfStarsOn) {
+			result += "half,";
+			next++;
+		}
+
+		for (int j = next; j <= 5; j++) {
+			result += "off,";
+		}
+
+		return result.substring(0, result.length() - 1);
+	}
 
 	@Override
 	public int hashCode() {

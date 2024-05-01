@@ -32,16 +32,16 @@ public class ReviewDAOTest {
 	public void testCreateReview() {
 		Review review = new Review();
 		Book book = new Book();
-		book.setBookId(3);
+		book.setBookId(13);
 		
 		Customer customer = new Customer();
-		customer.setCustomerId(1);
+		customer.setCustomerId(7);
 		review.setBook(book);
 		review.setCustomer(customer);
 		
-		review.setHeadline("This is a very good book");
+		review.setHeadline("Must Read");
 		review.setRating(5);
-		review.setComment("Very good");
+		review.setComment("It is must read book for java programmers..");
 		
 		Review savedReview = reviewDao.create(review);
 		assertTrue(savedReview.getReviewId() > 0);
@@ -93,4 +93,23 @@ public class ReviewDAOTest {
 		assertTrue(totalReviews > 0);
 	}
 
+	@Test
+	public void testFindByCustomerAndBookNotFound() {
+		Integer customerId = 100;
+		Integer bookId = 99;
+		
+		Review result = reviewDao.findByCustomerAndBook(customerId, bookId);
+		
+		assertNull(result);
+	}
+	
+	@Test
+	public void testFindByCustomerAndBookFound() {
+		Integer customerId = 7;
+		Integer bookId = 13;
+		
+		Review result = reviewDao.findByCustomerAndBook(customerId, bookId);
+		
+		assertNotNull(result);
+	}
 }
