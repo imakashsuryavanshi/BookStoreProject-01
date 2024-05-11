@@ -1,0 +1,45 @@
+package com.bookstore.dao;
+
+import java.util.List;
+
+import com.bookstore.entity.BookOrder;
+
+public class OrderDAO extends JpaDAO<BookOrder> implements GenericDAO<BookOrder> {
+
+	@Override
+	public BookOrder create(BookOrder e) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BookOrder update(BookOrder e) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BookOrder get(Object id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Object id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<BookOrder> listAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public long count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

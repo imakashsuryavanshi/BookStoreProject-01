@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.junit.AfterClass"/>
-    <fullyQualifiedTypeName name="javax.persistence.PersistenceException"/>
-    <fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
-    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.UserDAO"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Users"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
@@ -42,12 +38,10 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="com.bookstore.controller.frontend.CustomerLoginFilter"/>
     <fullyQualifiedTypeName name="com.bookstore.service.CustomerServices"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.ReviewDAO"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="com.bookstore.service.ReviewServices"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Review"/>
-    <fullyQualifiedTypeName name="com.bookstore.entity.Customer"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
@@ -56,8 +50,14 @@
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="com.bookstore.dao.BookDAO"/>
     <fullyQualifiedTypeName name="javax.print.DocFlavor.INPUT_STREAM"/>
-    <fullyQualifiedTypeName name="com.bookstore.entity.Book"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.bookstore.controller.frontend.shoppingcart.ShoppingCart"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.bookstore.dao.OrderDAO"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.BookOrder"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.Customer"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.OrderDetail"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.Book"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.OrderDetailId"/>
 </qualifiedTypeNameHistroy>
