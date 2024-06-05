@@ -881,3 +881,804 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.jboss.tools.usage 2 0 2024-05-11 19:19:02.610
 !MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+!SESSION 2024-05-16 20:19:28.430 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-16 20:19:33.402
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-05-16 20:21:00.293
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-16 20:21:00.293
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-16 20:21:18.541
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Abc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:23.075
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.035
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.044
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.054
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.061
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.072
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.079
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.087
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.094
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.194
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.211
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.221
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.234
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.259
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.285
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.295
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.307
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.318
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.490
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.498
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.505
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.513
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.522
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.533
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.544
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-16 20:21:24.559
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+!SESSION 2024-05-18 20:01:24.213 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-18 20:01:31.103
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-05-18 20:01:55.737
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-18 20:01:55.737
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-18 20:02:46.545
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Abc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:08.559
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:15.194
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:15.343
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:15.432
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:15.458
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:15.467
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:16.102
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:16.783
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:17.067
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:19.784
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:19.844
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:19.966
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:20.040
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:20.100
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:20.158
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:20.226
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:20.289
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 20:03:20.320
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2024-05-18 20:39:42.982
+!MESSAGE The 'org.eclipse.mylyn.java.ui.javaAllCompletionProposalComputer' proposal computer from the 'org.eclipse.mylyn.java.ui' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2024-05-18 20:40:01.022
+!MESSAGE The 'org.eclipse.mylyn.java.ui.javaAllCompletionProposalComputer' proposal computer from the 'org.eclipse.mylyn.java.ui' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2024-05-18 20:40:35.621
+!MESSAGE The 'org.eclipse.mylyn.java.ui.javaAllCompletionProposalComputer' proposal computer from the 'org.eclipse.mylyn.java.ui' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+!SESSION 2024-05-18 21:21:20.775 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-18 21:21:23.525
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-05-18 21:21:37.460
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-18 21:21:37.460
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-18 21:21:48.849
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Abc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:54.712
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.403
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.419
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.448
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.518
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.537
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.548
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.562
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.574
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.596
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.611
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.646
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.656
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.669
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.770
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.846
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.891
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:21:55.915
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2024-05-18 21:25:08.580
+!MESSAGE Server Tomcat v9.0 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2024-05-18 21:28:19.636
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2024-05-18 21:28:57.467
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+!SESSION 2024-05-18 21:37:12.462 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-18 21:37:18.585
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-05-18 21:37:30.829
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-18 21:37:30.829
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-18 21:37:44.299
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Abc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:51.762
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:53.781
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:53.938
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.067
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.099
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.172
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.182
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.191
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.205
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.251
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.282
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.390
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.592
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.646
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.720
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.742
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:54.862
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-05-18 21:37:55.062
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+!SESSION 2024-06-03 20:30:07.856 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-06-03 20:30:15.020
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-06-03 20:31:43.138
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-06-03 20:31:43.139
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-03 20:32:35.619
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Abc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:44.815
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.578
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.636
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.681
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.719
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.771
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.823
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.851
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.858
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.916
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.935
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.950
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.959
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.967
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.975
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.985
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:47.993
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:48.004
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.121
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.158
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.175
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.187
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.202
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.219
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.249
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.322
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.381
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.475
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.520
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.566
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.617
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.651
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.683
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-03 20:32:49.719
+!MESSAGE Could not send ACTION event 'finishWizard': no analytics instance present.
+!SESSION 2024-06-05 20:49:43.769 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-06-05 20:49:46.988
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-06-05 20:50:21.418
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-06-05 20:50:21.418
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-05 20:50:37.521
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Abc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:40.205
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:41.156
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:41.191
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:41.248
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:41.313
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:41.497
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:42.576
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:42.607
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:42.686
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:43.855
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:43.905
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:43.998
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:44.106
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:44.120
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:44.132
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:44.146
+!MESSAGE Could not send USER event 'Anonymous ID: c44f9294-cefa-44fb-87b8-2f392033667c': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:44.155
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-05 20:50:44.165
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.eclipse.jst.jee.web 4 0 2024-06-05 21:25:05.500
+!MESSAGE Encountered an unexpected exception.
+!STACK 0
+java.util.ConcurrentModificationException
+	at org.eclipse.emf.ecore.util.FeatureMapUtil$BasicFeatureEIterator.checkModCount(FeatureMapUtil.java:555)
+	at org.eclipse.emf.ecore.util.FeatureMapUtil$BasicFeatureEIterator.next(FeatureMapUtil.java:373)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.mergeRunAs(WebAppMerger.java:142)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:86)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.mergeWithModel(Web25MergedModelProvider.java:182)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.merge(Web25MergedModelProvider.java:165)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:155)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.annotationModelChanged(Web25MergedModelProvider.java:141)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$AnnotationModelListener.modelsChanged(AbstractMergedModelProvider.java:83)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider$1.run(AbstractAnnotationModelProvider.java:189)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:184)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:157)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:467)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1757)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1745)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1596)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1555)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:781)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1325)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jst.jee.web 4 0 2024-06-05 21:25:05.534
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+org.eclipse.jst.jee.model.internal.mergers.ModelException: java.util.ConcurrentModificationException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:92)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.mergeWithModel(Web25MergedModelProvider.java:182)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.merge(Web25MergedModelProvider.java:165)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:155)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.annotationModelChanged(Web25MergedModelProvider.java:141)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$AnnotationModelListener.modelsChanged(AbstractMergedModelProvider.java:83)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider$1.run(AbstractAnnotationModelProvider.java:189)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:184)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:157)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:467)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1757)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1745)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1596)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1555)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:781)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1325)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+Caused by: java.util.ConcurrentModificationException
+	at org.eclipse.emf.ecore.util.FeatureMapUtil$BasicFeatureEIterator.checkModCount(FeatureMapUtil.java:555)
+	at org.eclipse.emf.ecore.util.FeatureMapUtil$BasicFeatureEIterator.next(FeatureMapUtil.java:373)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.mergeRunAs(WebAppMerger.java:142)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:86)
+	... 28 more
+
+!ENTRY org.eclipse.jst.jee.web 4 0 2024-06-05 21:26:07.235
+!MESSAGE Encountered an unexpected exception.
+!STACK 0
+java.util.ConcurrentModificationException
+	at org.eclipse.emf.ecore.util.FeatureMapUtil$BasicFeatureEIterator.checkModCount(FeatureMapUtil.java:555)
+	at org.eclipse.emf.ecore.util.FeatureMapUtil$BasicFeatureEIterator.next(FeatureMapUtil.java:373)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:259)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:34)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:80)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.mergeWithModel(Web25MergedModelProvider.java:182)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.merge(Web25MergedModelProvider.java:165)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:155)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.annotationModelChanged(Web25MergedModelProvider.java:141)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$AnnotationModelListener.modelsChanged(AbstractMergedModelProvider.java:83)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider$1.run(AbstractAnnotationModelProvider.java:189)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:184)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:157)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:467)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1757)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1745)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1596)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1555)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:781)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1325)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jst.jee.web 4 0 2024-06-05 21:26:07.248
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+org.eclipse.jst.jee.model.internal.mergers.ModelException: java.util.ConcurrentModificationException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:92)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.mergeWithModel(Web25MergedModelProvider.java:182)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.merge(Web25MergedModelProvider.java:165)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:155)
+	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.annotationModelChanged(Web25MergedModelProvider.java:141)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$AnnotationModelListener.modelsChanged(AbstractMergedModelProvider.java:83)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider$1.run(AbstractAnnotationModelProvider.java:189)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:184)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:157)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:467)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1757)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1745)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1596)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1555)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:781)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1325)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+Caused by: java.util.ConcurrentModificationException
+	at org.eclipse.emf.ecore.util.FeatureMapUtil$BasicFeatureEIterator.checkModCount(FeatureMapUtil.java:555)
+	at org.eclipse.emf.ecore.util.FeatureMapUtil$BasicFeatureEIterator.next(FeatureMapUtil.java:373)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:259)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:34)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:80)
+	... 28 more
+
+!ENTRY org.eclipse.jdt.ui 2 0 2024-06-05 21:26:12.583
+!MESSAGE The 'org.eclipse.mylyn.java.ui.javaAllCompletionProposalComputer' proposal computer from the 'org.eclipse.mylyn.java.ui' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
