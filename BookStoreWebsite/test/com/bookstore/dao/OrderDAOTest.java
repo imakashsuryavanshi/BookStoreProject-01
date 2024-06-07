@@ -3,8 +3,6 @@ package com.bookstore.dao;
 import static org.junit.Assert.*;
 
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 
 import org.junit.AfterClass;
@@ -35,20 +33,20 @@ public class OrderDAOTest {
 	public void testCreateBookOrder() {
 		BookOrder order = new BookOrder();
 		Customer customer = new Customer();
-		customer.setCustomerId(4);
+		customer.setCustomerId(1);
 		
 		order.setCustomer(customer);
-		order.setRecipientName("Pradeep S");
-		order.setRecipientPhone("1234456789");
+		order.setRecipientName("Akash S");
+		order.setRecipientPhone("123456789");
 		order.setShippingAddress("Thane");
 		
 		Set<OrderDetail> orderDetails = new HashSet<>();
 		OrderDetail orderDetail = new OrderDetail();
 		
-		Book book = new Book(7);
+		Book book = new Book(3);
 		orderDetail.setBook(book);
 		orderDetail.setQuantity(2);
-		orderDetail.setSubtotal(72.4f);
+		orderDetail.setSubtotal(77.74f);
 		orderDetail.setBookOrder(order);
 		
 		orderDetails.add(orderDetail);
@@ -98,82 +96,28 @@ public class OrderDAOTest {
 	}
 
 	@Test
-	public void testUpdateBookOrderShippingAddress() {
-		Integer orderId = 1;
-		BookOrder order = orderDAO.get(orderId);
-		order.setShippingAddress("New Shipping Address");
-		
-		BookOrder updatedOrder = orderDAO.update(order);
-		
-		assertEquals(order.getShippingAddress(), updatedOrder.getShippingAddress());
+	public void testUpdateBookOrder() {
+		fail("Not yet implemented");
 	}
-	
-	@Test
-	public void testUpdateBookOrderDetail() {
-		Integer orderId = 5;
-		BookOrder order = orderDAO.get(orderId);
-		
-		Iterator<OrderDetail> iterator = order.getOrderDetails().iterator();
-		
-		while(iterator.hasNext()) {
-			OrderDetail orderDetail = iterator.next();
-			if(orderDetail.getBook().getBookId() == 7) {
-				orderDetail.setQuantity(3);
-				orderDetail.setSubtotal(120);
-			}
-		}
-		
-		BookOrder updatedOrder = orderDAO.update(order);
-		
-		iterator = order.getOrderDetails().iterator();
-		
-		int expectedQuantity = 3;
-		float expectedSubTotal = 120;
-		int actualQuantity = 0;
-		float actualSubTotal = 0.0f;
-		
-		while(iterator.hasNext()) {
-			OrderDetail orderDetail = iterator.next();
-			if(orderDetail.getBook().getBookId() == 7) {
-				actualQuantity = orderDetail.getQuantity();
-				actualSubTotal = orderDetail.getSubtotal();
-			}
-		}
-		
-		assertEquals(expectedQuantity, actualQuantity);
-		assertEquals(expectedSubTotal, actualSubTotal, 0.0f);
-	}
-	
 
 	@Test
 	public void testGet() {
-		Integer orderId = 1;
-		BookOrder order = orderDAO.get(orderId);
-		
-		assertEquals(1, order.getOrderDetails().size());
+		fail("Not yet implemented");
 	}
 
 	@Test
 	public void testDeleteObject() {
-		int orderId = 5;
-		orderDAO.delete(orderId);
-		
-		BookOrder order = orderDAO.get(orderId);
-		
-		assertNull(order);
+		fail("Not yet implemented");
 	}
 
 	@Test
 	public void testListAll() {
-		List<BookOrder> listOrders = orderDAO.listAll();
-		
-		assertTrue(listOrders.size() > 0);
+		fail("Not yet implemented");
 	}
 
 	@Test
 	public void testCount() {
-		long totalOrders = orderDAO.count();
-		assertEquals(2, totalOrders);
+		fail("Not yet implemented");
 	}
 
 }

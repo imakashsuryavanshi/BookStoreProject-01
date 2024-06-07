@@ -35,9 +35,8 @@
 			</a> 
 		</div>
 		<div>
-			<a href="list_order">
-				<img height="70" alt="Orders" src="../images/order.png"> <br>
-				Orders
+			<a href="orders">
+				<img height="70" alt="Orders" src="../images/order.png"> <br>Orders
 			</a> 
 		</div>
 	</div>

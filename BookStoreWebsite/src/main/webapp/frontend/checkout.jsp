@@ -81,21 +81,41 @@
 								<td>Street Address:</td>
 								<td><input type="text" name="address" value="${loggedCustomer.address}" /></td>
 							</tr>
+							<tr>
+								<td>City:</td>
+								<td><input type="text" name="city" value="${loggedCustomer.city}" /></td>
+							</tr>
+							<tr>
+								<td>Zip Code:</td>
+								<td><input type="text" name="zipcode" value="${loggedCustomer.zipcode}" /></td>
+							</tr>
+							<tr>
+								<td>Country:</td>
+								<td><input type="text" name="country" value="${loggedCustomer.country}" /></td>
+							</tr>
 						</table>
-					</form>
+						<div>
+							<h2>Payment</h2>
+							Choose your payment method:
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<select name="Payment Method">
+								<option value="Cash On Delivery">Cash On Delivery</option>
+							</select>
+						</div>
+					<div>
+						<table class="normal">
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td><button type="submit">Place Order</button></td>
+								<td><a href="${pageContext.request.contextPath}/">Continue Shopping</a></td>
+							</tr>
+						</table>
+					</div>
+				</form>
 				</div>
-				<div>
-					<table class="normal">
-						<tr><td>&nbsp;</td></tr>
-						<tr>
-							<td></td>
-							<td><button type="submit">Update</button></td>
-							<td><input type="button" id="clearCart" value="Clear Cart"/></td>
-							<td><a href="${pageContext.request.contextPath}/">Continue Shopping</a></td>
-							<td><a href="checkout">Checkout</a></td>
-						</tr>
-					</table>
-				</div>
+				
 		</c:if>
 		
 	</div>
@@ -104,30 +124,26 @@
 <script type="text/javascript">
 
 	$(document).ready(function() {
-		$("#clearCart").click(function() {
-			window.location = 'clear_cart';
-		});
-		
-		$("#cartForm").validate({
+		$('#orderForm').validate({
 			rules: {
-				<c:forEach items="${cart.items}" var="item" varStatus="status">
-					quantity${status.index +1}: {
-						required: true, number: true, min: 1
-					},
-				</c:forEach>
+				recipientName : "required",
+				recipientPhone : "required",
+				address : "required",
+				city : "required",
+				zipcode : "required",
+				country : "required"
 			},
 			
-			messages: {
-				<c:forEach items="${cart.items}" var="item" varStatus="status">
-					quantity${status.index +1}: {
-						required: "Please enter quantity",
-						number: "Quantity must be a number",
-						min: "Quantity must be greater than 0"
-					},
-				</c:forEach>
-			},
-		});
-		
+			messages : {
+				recipientName : "Please enter recipient name",
+				recipientPhone : "Please enter recipient phone number",
+				address : "Please enter street address",
+				city : "Please enter city",
+				zipcode : "Please enter zip code",
+				country : "Please enter country"
+			}
+			
+		});		
 	});
 	
 </script>
