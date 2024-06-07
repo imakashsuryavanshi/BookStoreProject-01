@@ -89,3 +89,12 @@
 0:0:0:0:0:0:0:1 - - [06/Jun/2024:21:48:12 +0530] "GET /BookStoreWebsite/view_cart HTTP/1.1" 200 100826
 0:0:0:0:0:0:0:1 - - [06/Jun/2024:21:48:14 +0530] "GET /BookStoreWebsite/checkout HTTP/1.1" 404 429
 0:0:0:0:0:0:0:1 - - [06/Jun/2024:21:48:14 +0530] "GET /BookStoreWebsite/images/BookStoreLogo.jpeg HTTP/1.1" 404 429
+127.0.0.1 - - [06/Jun/2024:22:04:30 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [06/Jun/2024:22:05:09 +0530] "GET /BookStoreWebsite/login HTTP/1.1" 200 2745
+0:0:0:0:0:0:0:1 - - [06/Jun/2024:22:05:37 +0530] "POST /BookStoreWebsite/login HTTP/1.1" 200 2517
+0:0:0:0:0:0:0:1 - - [06/Jun/2024:22:05:46 +0530] "GET /BookStoreWebsite/ HTTP/1.1" 200 183342
+0:0:0:0:0:0:0:1 - - [06/Jun/2024:22:05:54 +0530] "GET /BookStoreWebsite/view_book?id=12 HTTP/1.1" 200 62805
+0:0:0:0:0:0:0:1 - - [06/Jun/2024:22:05:57 +0530] "GET /BookStoreWebsite/add_to_cart?book_id=12 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [06/Jun/2024:22:05:58 +0530] "GET /BookStoreWebsite/view_cart HTTP/1.1" 200 60659
+0:0:0:0:0:0:0:1 - - [06/Jun/2024:22:06:01 +0530] "GET /BookStoreWebsite/checkout HTTP/1.1" 404 429
+0:0:0:0:0:0:0:1 - - [06/Jun/2024:22:06:01 +0530] "GET /BookStoreWebsite/images/BookStoreLogo.jpeg HTTP/1.1" 404 429
