@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.bookstore.service.OrderServices"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.BookOrder"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.Customer"/>
+    <fullyQualifiedTypeName name="com.bookstore.controller.frontend.shoppingcart.ShoppingCart"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.Book"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.bookstore.entity.OrderDetail"/>
+</qualifiedTypeNameHistroy>
