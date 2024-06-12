@@ -1,0 +1,9 @@
+127.0.0.1 - - [12/Jun/2024:21:11:06 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Jun/2024:21:12:28 +0530] "GET /BookStoreWebsite/ HTTP/1.1" 200 183277
+0:0:0:0:0:0:0:1 - - [12/Jun/2024:21:12:29 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [12/Jun/2024:21:12:32 +0530] "GET /BookStoreWebsite/login HTTP/1.1" 200 2745
+0:0:0:0:0:0:0:1 - - [12/Jun/2024:21:12:41 +0530] "POST /BookStoreWebsite/login HTTP/1.1" 200 2517
+0:0:0:0:0:0:0:1 - - [12/Jun/2024:21:12:43 +0530] "GET /BookStoreWebsite/view_orders HTTP/1.1" 200 2534
+0:0:0:0:0:0:0:1 - - [12/Jun/2024:21:12:50 +0530] "GET /BookStoreWebsite/show_order_detail?id=9 HTTP/1.1" 200 46597
+0:0:0:0:0:0:0:1 - - [12/Jun/2024:21:12:56 +0530] "GET /BookStoreWebsite/show_order_detail?id=8 HTTP/1.1" 200 1819
+0:0:0:0:0:0:0:1 - - [12/Jun/2024:21:13:06 +0530] "GET /BookStoreWebsite/show_order_detail?id=15 HTTP/1.1" 200 1819

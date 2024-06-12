@@ -3,6 +3,7 @@ package com.bookstore.dao;
 import static org.junit.Assert.*;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.junit.AfterClass;
@@ -115,6 +116,42 @@ public class OrderDAOTest {
 		fail("Not yet implemented");
 	}
 
+	@Test
+	public void testListByCustomerNoOrders() {
+		Integer customerId = 99;
+		List<BookOrder> listOrders = orderDAO.listByCustomer(customerId);
+		
+		assertTrue(listOrders.isEmpty());
+	}
+	
+	@Test
+	public void testListByCustomerHaveOrders() {
+		Integer customerId = 4;
+		List<BookOrder> listOrders = orderDAO.listByCustomer(customerId);
+		
+		assertTrue(listOrders.size() > 0);
+	}
+	
+	@Test
+	public void testGetByIdAndCustomerNull() {
+		Integer orderId =10;
+		Integer customerId = 99;
+		
+		BookOrder order = orderDAO.get(orderId, customerId);
+		
+		assertNull(order);
+	}
+	
+	@Test
+	public void testGetByIdAndCustomerNotNull() {
+		Integer orderId =8;
+		Integer customerId = 8;
+		
+		BookOrder order = orderDAO.get(orderId, customerId);
+		
+		assertNotNull(order);
+	}
+	
 	@Test
 	public void testCount() {
 		fail("Not yet implemented");

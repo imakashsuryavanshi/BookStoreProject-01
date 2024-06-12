@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.bookstore.entity.BookOrder"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Customer"/>
     <fullyQualifiedTypeName name="com.bookstore.controller.frontend.shoppingcart.ShoppingCart"/>
     <fullyQualifiedTypeName name="com.bookstore.entity.Book"/>
@@ -11,5 +10,6 @@
     <fullyQualifiedTypeName name="com.bookstore.entity.OrderDetail"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="com.bookstore.service.OrderServices"/>
 </qualifiedTypeNameHistroy>

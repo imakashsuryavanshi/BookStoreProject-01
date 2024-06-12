@@ -114,4 +114,30 @@ public class OrderServices {
 		RequestDispatcher dispatcher = request.getRequestDispatcher(messagePage);
 		dispatcher.forward(request, response);		
 	}
+
+	public void listOrderByCustomer() throws ServletException, IOException {
+		HttpSession session = request.getSession();
+		Customer customer = (Customer) session.getAttribute("loggedCustomer");
+		List<BookOrder> listOrders = orderDAO.listByCustomer(customer.getCustomerId());
+		
+		request.setAttribute("listOrders", listOrders);
+		
+		String historyPage = "frontend/order_list.jsp";
+		RequestDispatcher dispatcher = request.getRequestDispatcher(historyPage);
+		dispatcher.forward(request, response);
+	}
+
+	public void showOrderDetailForCustomer() throws ServletException, IOException {
+		int orderId = Integer.parseInt(request.getParameter("id"));
+		
+		HttpSession session = request.getSession();
+		Customer customer = (Customer) session.getAttribute("loggedCustomer");
+		
+		BookOrder order = orderDAO.get(orderId, customer.getCustomerId());
+		request.setAttribute("order", order);
+		
+		String detailPage = "frontend/order_detail.jsp";
+		RequestDispatcher dispatcher = request.getRequestDispatcher(detailPage);
+		dispatcher.forward(request, response);
+	}
 }

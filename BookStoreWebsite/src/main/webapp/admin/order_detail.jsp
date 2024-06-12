@@ -78,7 +78,10 @@
 			<c:forEach items="${order.orderDetails}" var="orderDetail" varStatus="status">
 			<tr>
 				<td>${status.index + 1 }</td>
-				<td>${orderDetail.book.title}</td>
+				<td>
+					<img style="vertical-align: middle;" src="data:image/jpg;base64,${orderDetail.book.base64Image}" width="48" height="64">
+					${orderDetail.book.title}
+				</td>
 				<td>${orderDetail.book.author}</td>
 				<td><fmt:formatNumber value="${orderDetail.book.price}" type="currency" currencySymbol="$"/></td>
 				<td>${orderDetail.quantity}</td>
