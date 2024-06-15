@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderDAOTest.testGetByIdAndCustomerNull" project="BookStoreWebsite" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.bookstore.dao.OrderDAOTest" time="0.596" displayname="OrderDAOTest" uniqueid="[engine:junit-vintage]/[runner:com.bookstore.dao.OrderDAOTest]">
-    <testcase name="testGetByIdAndCustomerNull" classname="com.bookstore.dao.OrderDAOTest" time="0.596" displayname="testGetByIdAndCustomerNull" uniqueid="[engine:junit-vintage]/[runner:com.bookstore.dao.OrderDAOTest]/[test:testGetByIdAndCustomerNull(com.bookstore.dao.OrderDAOTest)]"/>
-  </testsuite>
-</testrun>

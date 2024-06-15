@@ -1,0 +1,3 @@
+String detailPage = "frontend/order_detail.jsp";
+		RequestDispatcher dispatcher = request.getRequestDispatcher(detailPage);
+		dispatcher.forward(request, response);
