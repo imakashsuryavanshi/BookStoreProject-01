@@ -9,6 +9,7 @@
 	<title>Edit Order - Evergreen Bookstore Administration</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="../js/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" /><br>
@@ -58,11 +59,11 @@
 				<td><b>Order Status: </b></td>
 				<td>
 					<select name="orderStatus">
-						<option value="Processing">Processing</option>
-						<option value="Shipping">Shipping</option>
-						<option value="Delivered">Delivered</option>
-						<option value="Completed">Completed</option>
-						<option value="Cancelled">Cancelled</option>
+						<option value="Processing" <c:if test="${order.status eq 'Processing' }">selected='selected'</c:if> >Processing</option>
+						<option value="Shipping" <c:if test="${order.status eq 'Shipping' }">selected='selected'</c:if>>Shipping</option>
+						<option value="Delivered" <c:if test="${order.status eq 'Delivered' }">selected='selected'</c:if>>Delivered</option>
+						<option value="Completed" <c:if test="${order.status eq 'Completed' }">selected='selected'</c:if>>Completed</option>
+						<option value="Cancelled" <c:if test="${order.status eq 'Cancelled' }">selected='selected'</c:if>>Cancelled</option>
 					</select>
 				</td>
 			</tr>
@@ -86,12 +87,16 @@
 				<td>${status.index + 1 }</td>
 				<td>${orderDetail.book.title}</td>
 				<td>${orderDetail.book.author}</td>
-				<td><fmt:formatNumber value="${orderDetail.book.price}" type="currency" currencySymbol="$"/></td>
 				<td>
-					<input type="text" name="quantity" value="${orderDetail.quantity}" size="5" />
+					<input type="hidden" name="price" value="${orderDetail.book.price}" />
+					<fmt:formatNumber value="${orderDetail.book.price}" type="currency" currencySymbol="$"/>
+				</td>
+				<td>
+					<input type="hidden" name="bookId" value="${orderDetail.book.bookId}" />
+					<input type="text" name="quantity${status.index +1}" value="${orderDetail.quantity}" size="5" />
 				</td>
 				<td><fmt:formatNumber value="${orderDetail.subtotal}" type="currency" currencySymbol="$"/></td>
-				<td><a href="">Remove</a></td>
+				<td><a href="remove_book_from_order?id=${orderDetail.book.bookId}">Remove</a></td>
 			</tr>
 			</c:forEach>
 			<tr>
@@ -114,7 +119,7 @@
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<input type="submit" value="Save" />
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="button" value="Cancel" />
+		<input type="button" value="Cancel" onclick="javascript:window.location.href='list_order';"/>
 	</div>
 	</form>
 
@@ -130,6 +135,36 @@
 			window.open('add_book_form', '_blank', 
 					'width=' +width+ ', height=' +height+ ', top=' +top+ ', left=' +left);
 		}
+		
+		$(document).ready(function() {
+			$("#orderForm").validate({
+				rules: {
+					recipientName: "required",
+					recipientPhone: "required",
+					shippingAddress: "required",
+					
+					<c:forEach items="${order.orderDetails}" var="book" varStatus="status">
+						quantity${status.index +1}: {
+							required: true, number: true, min: 1
+						},
+					</c:forEach>
+				},
+				
+				messages: {
+					recipientName: "Please enter recipient name",
+					recipientPhone: "Please enter recipient phone",
+					shippingAddress: "Please enter shipping address",
+					
+					<c:forEach items="${order.orderDetails}" var="book" varStatus="status">
+						quantity${status.index +1}: {
+							required: "Please enter quantity",
+							number: "Quantity must be a number",
+							min: "Quantity must be greater than 0"
+						},
+					</c:forEach>
+				}
+			});
+		});
 	</script>
 </body>
 </html>
