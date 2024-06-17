@@ -105,7 +105,7 @@
 	<br>
 		<a href="edit_order?id=${order.orderId}">Edit this order</a>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href=" ">Delete this order</a>
+		<a href="">Delete this order</a>
 	</div>
 	
 
