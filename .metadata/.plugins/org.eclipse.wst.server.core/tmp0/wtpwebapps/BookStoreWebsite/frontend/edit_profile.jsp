@@ -29,20 +29,37 @@
 					<td align="left"><b>${loggedCustomer.email}</b> (Cannot be changed)</td>
 				</tr>
 				<tr>
-					<td align="right">Full Name: </td>
-					<td align="left"><input type="text" name="fullName" id="fullName" size="45" value="${loggedCustomer.fullname}"/></td>
+					<td align="right">First Name:</td>
+					<td align="left"><input type="text" name="firstname"
+						id="firstname" size="45" value="${loggedCustomer.firstname}" /></td>
+				</tr>
+				<tr>
+					<td align="right">Last Name:</td>
+					<td align="left"><input type="text" name="lastname"
+						id="lastname" size="45" value="${loggedCustomer.lastname}" /></td>
 				</tr>
 				<tr>
 					<td align="right">Phone Number: </td>
 					<td align="left"><input type="text" name="phone" id="phone" size="45" value="${loggedCustomer.phone}"/></td>
 				</tr>
 				<tr>
-					<td align="right">Address: </td>
-					<td align="left"><input type="text" name="address" id="address" size="45" value="${loggedCustomer.address}"/></td>
+					<td align="right">Address Line 1:</td>
+					<td align="left"><input type="text" name="address1"
+						id="address1" size="45" value="${loggedCustomer.addressLine1}" /></td>
+				</tr>
+				<tr>
+					<td align="right">Address Line 2:</td>
+					<td align="left"><input type="text" name="address2"
+						id="address2" size="45" value="${loggedCustomer.addressLine2}" /></td>
 				</tr>
 				<tr>
 					<td align="right">City: </td>
 					<td align="left"><input type="text" name="city" id="city" size="45" value="${loggedCustomer.city}"/></td>
+				</tr>
+				<tr>
+					<td align="right">State:</td>
+					<td align="left"><input type="text" name="state" id="state"
+						size="45" value="${loggedCustomer.state}" /></td>
 				</tr>
 				<tr>
 					<td align="right">Zip Code: </td>
@@ -50,7 +67,14 @@
 				</tr>
 				<tr>
 					<td align="right">Country: </td>
-					<td align="left"><input type="text" name="country" id="country" size="45" value="${loggedCustomer.country}"/></td>
+					<td align="left">
+						<select id="country" name="country">
+							<c:forEach items="${mapCountries}" var="country">
+								<option value="${country.value}"
+									<c:if test='${loggedCustomer.country eq country.value}'> selected='selected'</c:if>>${country.key}</option>
+							</c:forEach>
+						</select>
+					</td>
 				</tr>
 				<tr>
 					<td colspan="2" align="center">

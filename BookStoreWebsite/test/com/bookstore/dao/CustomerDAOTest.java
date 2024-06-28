@@ -26,14 +26,17 @@ class CustomerDAOTest {
 	@Test
 	void testCreateCustomer() {
 		Customer customer = new Customer();
-		customer.setEmail("pradeepS@gmail.com");
-		customer.setFullname("Pradeep Suryavanshi");
+		customer.setEmail("customer11@gmail.com");
+		customer.setFirstname("Raj");
+		customer.setLastname("Kapoor");
 		customer.setCity("Mumbai");
+		customer.setState("Uttar Pradesh");
 		customer.setCountry("India");
-		customer.setAddress("Kisan Nagar");
-		customer.setZipcode("400604");
+		customer.setAddressLine1("10, Rajashri Nagar");
+		customer.setAddressLine2("Near bank");
+		customer.setZipcode("300504");
 		customer.setPhone("8877556644");
-		customer.setPassword("secret");
+		customer.setPassword("customer11");
 		
 		Customer savedCustomer = customerDao.create(customer);
 		
@@ -50,18 +53,18 @@ class CustomerDAOTest {
 
 	@Test
 	public void testUpdateCustomer() {
-		Customer customer = customerDao.get(1);
-		String fullName = "Akash S";
-		customer.setFullname(fullName);
+		Customer customer = customerDao.get(6);
+		String lastname = "Surya";
+		customer.setLastname(lastname);
 		
 		Customer updatedCustomer = customerDao.update(customer);
 		
-		assertTrue(updatedCustomer.getFullname().equals(fullName));
+		assertTrue(updatedCustomer.getLastname().equals(lastname));
 	}
 	
 	@Test
-	void testDeleteObject() {
-		Integer customerId = 2;
+	void testDeleteCustomer() {
+		Integer customerId = 12;
 		customerDao.delete(customerId);
 		
 		Customer customer = customerDao.get(customerId);
@@ -73,7 +76,7 @@ class CustomerDAOTest {
 	public void testListAll() {
 		List<Customer> listCustomers = customerDao.listAll();
 		for(Customer customer : listCustomers) {
-			System.out.println(customer.getFullname());
+			System.out.println(customer.getFirstname());
 		}
 		
 		assertFalse(listCustomers.isEmpty());
