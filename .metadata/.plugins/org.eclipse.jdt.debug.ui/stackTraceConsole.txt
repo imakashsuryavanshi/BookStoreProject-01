@@ -1,3 +1,10 @@
-String detailPage = "frontend/order_detail.jsp";
-		RequestDispatcher dispatcher = request.getRequestDispatcher(detailPage);
-		dispatcher.forward(request, response);
+order.setFirstname("Nam");
+		order.setLastname("Ha Minh");
+		order.setPhone("123456789");
+		order.setAddressLine1("123 South Street");
+		order.setAddressLine2("Clifton Park");
+		order.setCity("New York");
+		order.setState("New York");
+		order.setCountry("US");
+		order.setPaymentMethod("paypal");
+		order.setZipcode("123456");

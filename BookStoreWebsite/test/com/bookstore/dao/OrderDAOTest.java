@@ -66,47 +66,50 @@ public class OrderDAOTest {
 		customer.setCustomerId(8);
 		
 		order.setCustomer(customer);
-		order.setFirstname("Akash S");
+		order.setFirstname("Nam");
+		order.setLastname("Ha Minh");
 		order.setPhone("123456789");
-		order.setAddressLine1("Thane");
+		order.setAddressLine1("123 South Street");
+		order.setAddressLine2("Clifton Park");
+		order.setCity("New York");
+		order.setState("New York");
+		order.setCountry("US");
+		order.setPaymentMethod("paypal");
+		order.setZipcode("123456");
 		
 		Set<OrderDetail> orderDetails = new HashSet<>();
-		OrderDetail orderDetail1 = new OrderDetail();
+		OrderDetail orderDetail = new OrderDetail();
 		
-		Book book1 = new Book(4);
-		orderDetail1.setBook(book1);
-		orderDetail1.setQuantity(2);
-		orderDetail1.setSubtotal(77.74f);
-		orderDetail1.setBookOrder(order);
+		Book book = new Book(4);
+		orderDetail.setBook(book);
+		orderDetail.setQuantity(2);
+		orderDetail.setSubtotal(73.44f);
+		orderDetail.setBookOrder(order);
 		
-		orderDetails.add(orderDetail1);
+		orderDetails.add(orderDetail);
 		
-		OrderDetail orderDetail2 = new OrderDetail();
-		
-		Book book2 = new Book(7);
-		orderDetail2.setBook(book2);
-		orderDetail2.setQuantity(1);
-		orderDetail2.setSubtotal(37.18f);
-		orderDetail2.setBookOrder(order);
-		
-		orderDetails.add(orderDetail2);
+		order.setOrderDetails(orderDetails);
+		order.setTax(7.3f);
+		order.setShippingFee(2.0f);
+		order.setSubtotal(73.44f);
+		order.setTotal(82.74f);
 		
 		order.setOrderDetails(orderDetails);
 		
 		orderDAO.create(order);
-		assertTrue(order.getOrderId() > 0 && order.getOrderDetails().size() == 2);
+		assertTrue(order.getOrderId() > 0);
 	}
 
 	@Test
 	public void testUpdateBookOrderDetail() {
-		Integer orderId = 25;
+		Integer orderId = 15;
 		BookOrder order = orderDAO.get(orderId);
 		
 		Iterator<OrderDetail> iterator = order.getOrderDetails().iterator();
 		
 		while (iterator.hasNext()) {
 			OrderDetail orderDetail = iterator.next();
-			if (orderDetail.getBook().getBookId() == 9) {
+			if (orderDetail.getBook().getBookId() == 4) {
 				orderDetail.setQuantity(3);
 				orderDetail.setSubtotal(120);
 			}
@@ -126,7 +129,7 @@ public class OrderDAOTest {
 		
 		while (iterator.hasNext()) {
 			OrderDetail orderDetail = iterator.next();
-			if (orderDetail.getBook().getBookId() == 9) {
+			if (orderDetail.getBook().getBookId() == 4) {
 				actualQuantity = orderDetail.getQuantity();
 				actualSubtotal = orderDetail.getSubtotal();
 			}
@@ -138,11 +141,21 @@ public class OrderDAOTest {
 
 	@Test
 	public void testGet() {
-		Integer orderId = 25;
+		Integer orderId = 15;
 		BookOrder order = orderDAO.get(orderId);
 		System.out.println(order.getFirstname());
-		System.out.println(order.getFirstname());
+		System.out.println(order.getLastname());
 		System.out.println(order.getPhone());
+		System.out.println(order.getAddressLine1());
+		System.out.println(order.getAddressLine2());
+		System.out.println(order.getCity());
+		System.out.println(order.getState());
+		System.out.println(order.getCountry());
+		System.out.println(order.getZipcode());
+		System.out.println(order.getStatus());
+		System.out.println(order.getSubtotal());
+		System.out.println(order.getShippingFee());
+		System.out.println(order.getTax());
 		System.out.println(order.getTotal());
 		System.out.println(order.getPaymentMethod());
 		

@@ -2,6 +2,7 @@ package com.bookstore.entity;
 
 import java.util.Date;
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -200,6 +201,11 @@ public class BookOrder implements java.io.Serializable {
 
 	public void setCountry(String country) {
 		this.country = country;
+	}
+	
+	@Transient
+	public String getCountryName() {
+		return new Locale("", this.country).getDisplayCountry();
 	}
 
 	@Column(name = "subtotal", nullable = false, precision = 12, scale = 0)

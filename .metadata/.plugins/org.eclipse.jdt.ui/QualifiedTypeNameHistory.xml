@@ -26,5 +26,7 @@
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="javax.persistence.Transient"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="com.bookstore.service.CustomerServices"/>
+    <fullyQualifiedTypeName name="com.bookstore.service.CommonUtility"/>
 </qualifiedTypeNameHistroy>
