@@ -57,12 +57,12 @@
 	<tr>
 		<td align="right">Country:</td>
 		<td align="left">
-		<select id="country" name="country">
-				<c:forEach items="${mapCountries}" var="country">
-					<option value="${country.value}"
-						<c:if test='${customer.country eq country.value}'> selected='selected'</c:if>>${country.key}</option>
-				</c:forEach>
-		</select>
+			<select id="country" name="country">
+					<c:forEach items="${mapCountries}" var="country">
+						<option value="${country.value}"
+							<c:if test='${customer.country eq country.value}'> selected='selected'</c:if>>${country.key}</option>
+					</c:forEach>
+			</select>
 		</td>
 	</tr>
 	<tr>
