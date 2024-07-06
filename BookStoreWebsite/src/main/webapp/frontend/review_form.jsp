@@ -36,17 +36,17 @@
 						<input type="hidden" id="rating" name="rating" />
 						<input type="hidden" name="bookId" value="${book.bookId}" />
 						<br>
-						<input type="text" name="headline" size="60" placeholder="Headline or summary for your review (required)" />
+						<input type="text" name="headline" size="60" placeholder="Headline or summary for your review (required)" required/>
 						<br>
 						<br>
-						<textarea name="comment" rows="10" cols="70" placeholder="Write your review details..."></textarea>
+						<textarea name="comment" rows="10" cols="70" placeholder="Write your review details..." required></textarea>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="center">
 						<button type="submit">Submit</button>
 						&nbsp; &nbsp;
-						<button id="buttonCancel">Cancel</button>
+						<button type="button" onclick="history.go(-1);">Cancel</button>
 					</td>
 				</tr>
 			</table>
@@ -57,21 +57,6 @@
 <script type="text/javascript">
 
 	$(document).ready(function() {
-		$("#reviewForm").validate({
-			rules: {
-				headline: "required",
-				comment: "required"
-			},
-			
-			messages: {
-				headline: "Please enter headline",
-				comment: "Please enter review details"
-			}
-		});
-		
-		$("#buttonCancel").click(function() {
-			history.go(-1);
-		});
 		
 		$("#rateYo").rateYo({
 		    starWidth: "40px",

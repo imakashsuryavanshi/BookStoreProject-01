@@ -29,11 +29,11 @@
 	</div>
 	<div align="center">
 		<c:if test="${customer != null}">
-			<form action="update_customer" method="post" id="customerForm">
+			<form action="update_customer" method="post" id="customerForm" style="max-width: 700px; margin: 0 auto;" >
 			<input type="hidden" name="customerId" value="${customer.customerId}">
 		</c:if>
 		<c:if test="${customer == null}">
-			<form action="create_customer" method="post" id="customerForm">
+			<form action="create_customer" method="post" id="customerForm" style="max-width: 700px; margin: 0 auto;" >
 		</c:if>
 		
 			<jsp:directive.include file="../common/customer_form.jsp" />

@@ -8,8 +8,6 @@
 	<meta charset="ISO-8859-1">
 	<title>Checkout - Evergreen Bookstore</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" />
@@ -68,45 +66,45 @@
 						</tr>
 					</table>
 					<br>
-					<form id="orderForm" action="place_order" method="post">
+					<form action="place_order" method="post">
 						<table>
 						<h2>Recipient Information</h2>
 							<tr>
 								<td>First Name:</td>
-								<td><input type="text" name="firstname" value="${loggedCustomer.firstname}" /></td>
+								<td><input type="text" name="firstname" value="${loggedCustomer.firstname}" required /></td>
 							</tr>
 							<tr>
 								<td>Last Name:</td>
-								<td><input type="text" name="lastname" value="${loggedCustomer.lastname}" /></td>
+								<td><input type="text" name="lastname" value="${loggedCustomer.lastname}" required /></td>
 							</tr>
 							<tr>
 								<td>Phone:</td>
-								<td><input type="text" name="phone" value="${loggedCustomer.phone}" /></td>
+								<td><input type="text" name="phone" value="${loggedCustomer.phone}" required /></td>
 							</tr>
 							<tr>
 								<td>Address Line 1:</td>
-								<td><input type="text" name="address1" value="${loggedCustomer.addressLine1}" /></td>
+								<td><input type="text" name="address1" value="${loggedCustomer.addressLine1}" required /></td>
 							</tr>
 							<tr>
 								<td>Address Line 2:</td>
-								<td><input type="text" name="address2" value="${loggedCustomer.addressLine2}" /></td>
+								<td><input type="text" name="address2" value="${loggedCustomer.addressLine2}" required /></td>
 							</tr>
 							<tr>
 								<td>City:</td>
-								<td><input type="text" name="city" value="${loggedCustomer.city}" /></td>
+								<td><input type="text" name="city" value="${loggedCustomer.city}" required /></td>
 							</tr>
 							<tr>
 								<td>State:</td>
-								<td><input type="text" name="state" value="${loggedCustomer.state}" /></td>
+								<td><input type="text" name="state" value="${loggedCustomer.state}" required /></td>
 							</tr>
 							<tr>
 								<td>Zip Code:</td>
-								<td><input type="text" name="zipcode" value="${loggedCustomer.zipcode}" /></td>
+								<td><input type="number" name="zipcode" value="${loggedCustomer.zipcode}" required /></td>
 							</tr>
 							<tr>
 								<td>Country:</td>
 								<td>
-									<select id="country" name="country">
+									<select id="country" name="country" required>
 										<c:forEach items="${mapCountries}" var="country">
 											<option value="${country.value}" <c:if test='${loggedCustomer.country eq country.value}'> selected='selected'</c:if>>${country.key}</option>
 										</c:forEach>
@@ -142,37 +140,5 @@
 	</div>
 	<jsp:directive.include file="footer.jsp" />
 	
-<script type="text/javascript">
-
-	$(document).ready(function() {
-		$('#orderForm').validate({
-			rules: {
-				firstname : "required",
-				lastname : "required",
-				phone : "required",
-				address1 : "required",
-				address2 : "required",
-				city : "required",
-				state : "required",
-				zipcode : "required",
-				country : "required"
-			},
-			
-			messages : {
-				firstname : "Please enter first name",
-				lastname : "Please enter last name",
-				phone : "Please enter phone number",
-				address1 : "Please enter address line 1",
-				address2 : "Please enter address line 2",
-				city : "Please enter city",
-				state : "Please enter state",
-				zipcode : "Please enter zip code",
-				country : "Please enter country"
-			}
-			
-		});		
-	});
-	
-</script>
 </body>
 </html>

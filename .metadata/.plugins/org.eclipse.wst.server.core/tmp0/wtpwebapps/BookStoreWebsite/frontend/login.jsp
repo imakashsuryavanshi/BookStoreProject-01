@@ -7,8 +7,6 @@
 	<meta charset="ISO-8859-1">
 	<title>Customer Login - Evergreen Bookstore</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" />
@@ -22,15 +20,15 @@
 			</div>
 		</c:if>
 		
-		<form id="loginForm" action="login" method="post">
+		<form action="login" method="post">
 			<table>
 			 	<tr>
 			 		<td>Email:</td>
-			 		<td><input type="text" id="email" name="email" size="20"></td>
+			 		<td><input type="email" id="email" name="email" size="20" required></td>
 			 	</tr>
 			 	<tr>
 			 		<td>Password:</td>
-			 		<td><input type="password" id="password" name="password" size="20"></td>
+			 		<td><input type="password" id="password" name="password" size="20" required></td>
 			 	</tr>
 			 	<tr>
 			 		<td colspan="2" align="center">
@@ -42,31 +40,5 @@
 	</div>
 	<jsp:directive.include file="footer.jsp" />
 	
-<script type="text/javascript">
-
-	$(document).ready(function() {
-		$("#loginForm").validate({
-			rules: {
-				email: {
-					required: true,
-					email: true
-				},
-				
-				password: "required",
-			},
-			
-			messages: {
-				email: {
-					required: "Please enter email",
-					email: "Please enter a valid email address"
-				},
-				
-				password: "Please enter password"
-			}
-		});
-		
-	});
-	
-</script>
 </body>
 </html>

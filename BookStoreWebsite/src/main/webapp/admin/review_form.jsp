@@ -16,7 +16,7 @@
 		<h2 class="pageheading">Edit Review</h2>
 	</div>
 	<div align="center">
-		<form action="update_review" method="post" id="reviewForm">
+		<form action="update_review" method="post" id="reviewForm" style="max-width: 550px; margin: 0 auto;">
 		<input type="hidden" name="reviewId" value="${review.reviewId}"}>
 
 		<table class="form">
@@ -50,7 +50,7 @@
 			<tr>
 				<td colspan="2" align="center">
 					<button type="submit">Save</button>&nbsp;&nbsp;&nbsp;
-					<input type=button id="buttonCancel" value="Cancel" />
+					<button type="button" onclick="history.go(-1);">Cancel</button>
 				</td>
 			</tr>
 		</table>
@@ -74,7 +74,7 @@
 			});
 
 			$("#buttonCancel").click(function() {
-				history.go(-1);
+				
 			});
 		});
 	</script>
