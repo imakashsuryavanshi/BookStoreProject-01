@@ -6,12 +6,38 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="UTF-8"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="height=&quot;70&quot;"/>
+			<item value=" font-weight: bold;"/>
+			<item value="font-wight"/>
+			<item value="mx-3"/>
+			<item value="mr-3"/>
+			<item value="10px"/>
+			<item value="col-sm-8"/>
+			<item value="col-sm-4"/>
+			<item value="&lt;/td&gt;"/>
+			<item value="&lt;/tr&gt;"/>
+			<item value="&lt;td&gt;"/>
+			<item value="&lt;tr&gt;"/>
+			<item value="&lt;td align=&quot;left&quot;&gt;"/>
+			<item value="&lt;td align=&quot;right&quot;&gt;"/>
 			<item value="ISO-8859-1"/>
-			<item value="g"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="font-weight"/>
+			<item value="mx-2"/>
+			<item value="mx-3"/>
+			<item value="20px"/>
+			<item value="col-sm-9"/>
+			<item value="col-sm-3"/>
+			<item value="&lt;/div&gt;"/>
+			<item value="&lt;div class=&quot;col&quot;&gt;"/>
+			<item value="&lt;div class=&quot;row&quot;&gt;"/>
+			<item value="&lt;div class=&quot;col col-sm-9&quot;&gt;"/>
+			<item value="&lt;label class=&quot;col col-sm-3 col-form-label&quot;&gt;"/>
+			<item value="&lt;div class=&quot;form-group row&quot;&gt;"/>
 			<item value="UTF-8"/>
 		</list>
 	</section>

@@ -1,17 +1,30 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Add Book To Order</title>
+	<jsp:include page="page_head.jsp">
+		<jsp:param name="pageTitle" value="Add Book to Order" />
+	</jsp:include>
 </head>
 <body>
-	<div align="center">
-		<h2>
-			The book <i>${book.title}</i> has been added to the order ID <b>${order.orderId}</b>
-		</h2>	
-		<input type="button" value="Close" onclick="javascript: self.close();" />
+<div class="container">
+	<div class="row">&nbsp;</div>
+
+	<div class="row">
+		<div class="col text-center text-success">
+			<h3>
+				The book <i>${book.title}</i> has been added to the order ID <b>${order.orderId}</b>
+			</h3>			
+		</div>
+	</div>
+	
+	<div class="row">&nbsp;</div>
+	
+	<div class="row">
+		<div class="col text-center">
+			<input type="button" class="btn btn-primary"value="Close" onclick="javascript: self.close();" />
+		</div>
 	</div>
 	
 	<script>
@@ -19,5 +32,6 @@
 			window.opener.location.reload();
 		}
 	</script>
+</div>	
 </body>
 </html>
