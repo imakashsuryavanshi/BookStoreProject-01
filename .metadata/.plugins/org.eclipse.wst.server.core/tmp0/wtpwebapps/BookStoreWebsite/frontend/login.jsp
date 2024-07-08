@@ -1,44 +1,48 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="ISO-8859-1">
-	<title>Customer Login - Evergreen Bookstore</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
+	<jsp:include page="page_head.jsp">
+		<jsp:param name="pageTitle" value="Customer Login" />
+	</jsp:include>
 <body>
+<div class="container">
 	<jsp:directive.include file="header.jsp" />
-	<br>
-	<div align="center">
-		<h2>Customer Login</h2>
-		
-		<c:if test="${message != null}">
-			<div align="center">
-				<h4 class="message">${message}</h4>
-			</div>
-		</c:if>
-		
-		<form action="login" method="post">
-			<table>
-			 	<tr>
-			 		<td>Email:</td>
-			 		<td><input type="email" id="email" name="email" size="20" required></td>
-			 	</tr>
-			 	<tr>
-			 		<td>Password:</td>
-			 		<td><input type="password" id="password" name="password" size="20" required></td>
-			 	</tr>
-			 	<tr>
-			 		<td colspan="2" align="center">
-			 			<button type="submit">Login</button>
-			 		</td>
-			 	</tr>
-			</table>
-		</form>
-	</div>
-	<jsp:directive.include file="footer.jsp" />
+	<div>&nbsp;</div>
 	
+	<div class="row">
+		<div class="col text-center"><h2>Customer Login</h2></div>
+	</div>
+	<div>&nbsp;</div>
+	<c:if test="${message != null}">
+		<div class="row">
+			<div class="col text-center"><h5 class="message alert alert-danger">${message}</h5></div>
+		</div>
+	</c:if>
+	
+	<form action="login" method="post" style="max-width: 400px; margin: 0 auto;">
+		<div class="border border-secondary rounded p-3">
+	 	<div class="form-group row">
+	 		<label class="col col-sm-3 col-form-label">Email:</label>
+	 		<div class="col col-sm-9">
+	 			<input type="email" id="email" name="email" class="form-control" required>
+	 		</div>
+	 	</div>
+	 	<div class="form-group row">
+	 		<label class="col col-sm-3 col-form-label">Password:</label>
+	 		<div class="col col-sm-9">
+	 			<input type="password" id="password" name="password" class="form-control" required>
+	 		</div>
+	 	</div>
+	 	<div class="row">
+	 		<div class="col text-center">
+	 			<button type="submit" class="btn btn-primary">Login</button>
+	 		</div>
+	 	</div>
+	 	</div>
+	</form>
+		
+	<jsp:directive.include file="footer.jsp" />
+</div>
 </body>
 </html>

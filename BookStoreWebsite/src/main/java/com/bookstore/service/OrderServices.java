@@ -195,8 +195,9 @@ public class OrderServices {
 		saveOrder(order);
 		
 		String message = "Thank You. Your order has been received."
-				+ "We will deliver your books within few days";
+				+ "We will deliver your books within few days.";
 		request.setAttribute("message", message);
+		request.setAttribute("pageTitle", "Order Completed");
 		
 		String messagePage = "frontend/message.jsp";
 		RequestDispatcher dispatcher = request.getRequestDispatcher(messagePage);

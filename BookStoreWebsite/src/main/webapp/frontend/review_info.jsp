@@ -1,61 +1,65 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="ISO-8859-1">
-	<title>View Review - Evergreen Bookstore</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Your Review - Online Book Store</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 </head>
 <body>
+<div class="container">
 	<jsp:directive.include file="header.jsp" />
-	<br>
-	<div align="center">
-		<form id="reviewForm" >
-			<table class="normal" width="60%">
-				<tr>
-					<td><h3>You already wrote a review for this book.</h3></td>
-					<td>&nbsp;</td>
-					<td><h2>${loggedCustomer.fullname}</h2></td>
-				</tr>
-				<tr>
-					<td colspan="3"><hr/></td>
-				</tr>
-				<tr>
-					<td>
-						<span id="book-title">${book.title}</span> <br/>
-						<img class="book-large" src="data:image/jpg;base64,${book.base64Image}"/>
-					</td>
-					<td>
-						<div id="rateYo"></div>
-						<br>
-						<input type="text" name="headline" size="60" readonly="readonly" value="${review.headline}"/>
-						<br>
-						<br>
-						<textarea name="comment" rows="10" cols="70" readonly="readonly" >${review.comment}</textarea>
-					</td>
-				</tr>
-			</table>
-		</form>
-	</div>
-	<jsp:directive.include file="footer.jsp" />
 	
+	<div class="row">&nbsp;</div>
+	
+	<form id="reviewForm" style="max-width: 900px; margin: 0 auto">
+		<div class="row">
+			<div class="col text-center"><h3 class="alert alert-info">You already wrote a review for this book</h3></div>
+		</div>
+		<div class="row">
+			<div class="col"><hr/></div>
+		</div>
+		<div class="row">
+			<div class="col-sm text-center">
+				<h4>${book.title}</h4>
+				<img class="img-fluid" src="data:image/jpg;base64,${book.base64Image}" />
+			</div>
+			<div class="col-sm">
+				<div>&nbsp;</div>
+				<div id="rateYo"></div>
+				<div>&nbsp;</div>
+				<div>
+					<input type="text" name="headline" size="60" readonly="readonly" class="form-control" value="${review.headline}"/>
+				</div>
+				<div>&nbsp;</div>
+				<div>
+					<textarea name="comment" cols="70" rows="10" readonly="readonly" class="form-control">${review.comment}</textarea>
+				</div>
+			</div>
+		</div>
+	</form>
+	
+	<jsp:directive.include file="footer.jsp" />
+</div>
 <script type="text/javascript">
 
 	$(document).ready(function() {
-		
+				
 		$("#rateYo").rateYo({
-		    starWidth: "40px",
-		    fullStar: true,
-		    rating: ${review.rating},
-		    readOnly: true
-		  });
+			starWidth: "40px",
+			fullStar: true,
+			rating: ${review.rating},
+			readOnly: true
+		});		
 	});
-	
-</script>
+</script>	
 </body>
 </html>

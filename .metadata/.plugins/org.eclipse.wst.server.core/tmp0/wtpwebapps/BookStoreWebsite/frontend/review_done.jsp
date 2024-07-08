@@ -1,40 +1,40 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="ISO-8859-1">
-	<title>Review Posted - Evergreen Bookstore</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
+<jsp:include page="page_head.jsp">
+		<jsp:param name="pageTitle" value="Review Posted" />
+</jsp:include>
 <body>
+<div class="container">
 	<jsp:directive.include file="header.jsp" />
-	<br>
-	<div align="center">
+	<div>&nbsp;</div>
+	
+	<div style="max-width: 900px; margin: 0 auto;">
+	
+		<div class="row">
+			<div class="col"><h2>Your Reviews</h2></div>
+			<div class="col">&nbsp;</div>
+			<div class="col"><h4>${loggedCustomer.fullname}</h4></div>
+		</div>
 		
-			<table class="normal" width="60%">
-				<tr>
-					<td><h2>Your Reviews</h2></td>
-					<td>&nbsp;</td>
-					<td><h2>${loggedCustomer.fullname}</h2></td>
-				</tr>
-				<tr>
-					<td colspan="3"><hr/></td>
-				</tr>
-				<tr>
-					<td>
-						<span id="book-title">${book.title}</span> <br/>
-						<img class="book-large" src="data:image/jpg;base64,${book.base64Image}"/>
-					</td>
-					<td colspan="2">
-						<h3>Your review has been posted. Thank You!</h3>
-					</td>
-				</tr>
-			</table>
+		<div class="row">
+			<div class="col"><hr/></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm">
+				<h4>${book.title}</h4>
+				<img class="img-fluid" src="data:image/jpg;base64,${book.base64Image}"/>
+			</div>
+			<div>&nbsp;</div>
+			<div class="col-sm text-center">
+				<h4 class="alert alert-success">Your review has been posted. <br>Thank You!</h4>
+			</div>
+		</div>
 		
 	</div>
 	<jsp:directive.include file="footer.jsp" />
-	
+</div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 
-<div class="book">
+<div class="col-sm-3 text-center">
 	<div>
-		<a href="view_book?id=${book.bookId}"> <img class="book-small"
+		<a href="view_book?id=${book.bookId}"> <img style="width: 128px; height: 164px;"
 			src="data:image/jpg;base64,${book.base64Image}" />
 		</a>
 	</div>

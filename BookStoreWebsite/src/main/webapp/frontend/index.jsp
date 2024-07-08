@@ -1,39 +1,45 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Evergreen Books - Online Book Store</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
+	<jsp:include page="page_head.jsp">
+		<jsp:param name="pageTitle" value="Evergreen Books" />
+	</jsp:include>
 <body>
+<div class="container">
 
 	<jsp:directive.include file="header.jsp" />
-	<br>
-	<br>
-	<div class="center">
-		<div>
-			<h2>New Books</h2>
-			<c:forEach items="${listNewBooks}" var="book">
-				<jsp:directive.include file="book_group.jsp" />
-			</c:forEach>
-		</div>
-		<div class="next-row">
-			<h2>Best-Selling Books</h2>
-			<c:forEach items="${listBestSellingBooks}" var="book">
-				<jsp:directive.include file="book_group.jsp" />
-			</c:forEach>
-		</div>
-		<div class="next-row">
-			<h2>Most favored Books</h2>
-			<c:forEach items="${listFavoredBooks}" var="book">
-				<jsp:directive.include file="book_group.jsp" />
-			</c:forEach>
-		</div>
+	<div>&nbsp;</div>
+	<div class="row text-center">
+		<div class="col"><h2>New Books:</h2></div>
 	</div>
-	<br>
-	<br>
+	
+	<div class="row justify-content-center mb-3">
+		<c:forEach items="${listNewBooks}" var="book">
+				<jsp:directive.include file="book_group.jsp" />
+		</c:forEach>	
+	</div>
+	
+	<div class="row text-center">
+		<div class="col"><h2>Best-Selling Books:</h2></div>
+	</div>	
+	
+	<div class="row justify-content-center mb-3">
+		<c:forEach items="${listBestSellingBooks}" var="book">
+			<jsp:directive.include file="book_group.jsp" />
+		</c:forEach>	
+	</div>
+	
+	<div class="row text-center">
+		<div class="col"><h2>Most-favored Books:</h2></div>
+	</div>	
+	
+	<div class="row justify-content-center mb-3">
+		<c:forEach items="${listFavoredBooks}" var="book">
+			<jsp:directive.include file="book_group.jsp" />
+		</c:forEach>	
+	</div>
+	
 	<jsp:directive.include file="footer.jsp" />
+</div>	
 </body>
 </html>

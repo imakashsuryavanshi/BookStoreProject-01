@@ -1,22 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Evergreen Books - Online Book Store</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
+	<jsp:include page="page_head.jsp">
+		<jsp:param name="pageTitle" value="${pageTitle}" />
+	</jsp:include>
 <body>
-	<jsp:directive.include file="header.jsp" /><br>
+<div class="container">
+	<jsp:directive.include file="header.jsp" />
 	
-	<div align="center">
-	<br>
-		<h3>${message}</h3>
-	<br>
+	<div>&nbsp;</div>	
+	<div class="row">
+		<div class="col text-center"><h4 class="alert alert-info">${message}</h4></div>
 	</div>
-	
+		
 	<jsp:directive.include file="footer.jsp" />
-	
+</div>
 </body>
 </html>

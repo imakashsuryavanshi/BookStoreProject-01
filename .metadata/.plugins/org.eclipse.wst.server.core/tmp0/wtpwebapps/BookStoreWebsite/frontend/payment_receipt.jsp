@@ -1,38 +1,50 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="ISO-8859-1">
-	<title>Payment Receipt - Evergreen Bookstore</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
+	<jsp:include page="page_head.jsp">
+		<jsp:param name="pageTitle" value="Payment Receipt" />
+	</jsp:include>
 <body>
+<div class="container">
 	<jsp:directive.include file="header.jsp" />
-	<br>
-	<div align="center">
-	<h2>You have made payment successfully. Thank you for purchasing!</h2>
-		<jsp:directive.include file="receipt.jsp" />
-	<div>
-		<br>
-		<input type="button" value="Print Receipt" onclick="javascript:showPrintReceiptPopup();" />
+
+	<div class="row">&nbsp;</div>
+
+	<div class="row">
+		<div class="col text-center">
+			<h4 class="alert alert-success">You have made payment successfully. Thank you for purchasing!</h4>
+			<h4>Your Payment Receipt</h4>
+		</div>
 	</div>
-	</div>
-	<jsp:directive.include file="footer.jsp" />
 	
-<script type="text/javascript">
-	function showPrintReceiptPopup(){
-		var width = 600;
-		var height = 250;
-		var left = (screen.width - width) / 2;
-		var top = (screen.width - width) / 2;
+	<div class="row">&nbsp;</div>
+	
+	<jsp:directive.include file="receipt.jsp" />
+	
+	<div class="row">&nbsp;</div>
 		
-		window.open('frontend/print_receipt.jsp','_blank',
-				'width=' + width + ', height=' + height + 
-				', top=' + top + ', left=' +left);
-	}
-</script>
+	<div class="row">
+		<div class="col text-center">
+			<input type="button" value="Print Receipt" onclick="javascript:showPrintReceiptPopup();"
+				class="btn btn-primary"/>
+		</div>
+	</div>
+	
+	<jsp:directive.include file="footer.jsp" />
+</div>	
+	<script>
+		function showPrintReceiptPopup() {
+			var width = 600;
+			var height = 250;
+			var left = (screen.width - width) / 2;
+			var top = (screen.width - width) / 2;
+			
+			window.open('frontend/print_receipt.jsp', '_blank',
+					'width=' + width + ', height=' + height +
+					', top=' + top + ', left=' + left);
+		}
+	</script>
 </body>
 </html>

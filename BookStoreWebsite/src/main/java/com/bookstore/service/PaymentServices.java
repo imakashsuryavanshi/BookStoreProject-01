@@ -100,7 +100,7 @@ public class PaymentServices {
 
 	private List<Transaction> getTransactionInformation(BookOrder order) {
 		Transaction transaction = new Transaction();
-		transaction.setDescription("Books ordered on Evergreen Books");
+		transaction.setDescription("Books Ordered on Evergreen Books");
 		Amount amount = getAmountDetails(order);
 		transaction.setAmount(amount);
 		
